@@ -1,0 +1,735 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DeJunia</title>
+    <link rel="stylesheet" href="./Assests/Css/style.css">
+    <link rel="icon" href="./Assests/img/logo3.jpg" type="image/jpeg">
+</head>
+<body>
+    
+    <header class="head">
+        <div class="toggle-btns">
+            <button class="lightMode" id="lightBtn"></button>
+            <button class="darkMode " id="darkBtn"></button>
+        </div>
+        <div class="navBtns">
+            <button class="navBtn active" onclick="scrollPage(1)">Home</button>
+            <button class="navBtn" onclick="scrollPage(2)">Services</button>
+            <button class="navBtn" onclick="scrollPage(3)">Projects</button>
+            <button class="navBtn" onclick="scrollPage(4)">About</button>
+            <button class="menu-btn icon-light" menu-toggler menu-btn>
+                <img src="./Assests/icons/menu-d.svg" width="24" height="24" alt="" class="menu">
+                <img class="close" src="./Assests/icons/menu-close-d.svg" width="24" height="24" alt="">
+            </button>
+
+            <button class="menu-btn icon-dark" menu-toggler menu-btn>
+                <img src="./Assests/icons/menu.svg" width="24" height="24" alt="" class="menu">
+                <img src="./Assests/icons/menu-close.svg" width="24" height="24" alt="" class="close" >
+            </button>
+        </div>
+    </header>
+
+    <nav class="sidebar" sidebar>
+        <div class="top-nav">
+            <figure class="profile-pic sm">
+                <div class="profile-img sm">
+                    <img src="./Assests/img/WhatsApp Image 2024-05-25 at 21.51.23_0f2c3c7d.jpg" alt="DeJunia profile picture" width="150" height="150">
+                </div>
+                <div class="profile-content">
+                    <h1 class="heading">
+                        DE JUNIA
+                    </h1>
+                    <ul class="profileContent">
+                        SOFTWARE ENGINEER
+                    </ul>
+                </div>
+            </figure>
+            <ul>
+                <li class="select-lists" id="callButton">
+                    <a href="#">
+                        <div class="icon sm" >
+                            <img src="./Assests/icons/phone.svg" width="20" class="icon-dark" height="20" alt="">
+                            <img src="./Assests/icons/phone-d.svg" width="20" class="icon-light" height="20" alt="">
+                        </div>
+                        <div class="txt">053 455 327</div>
+                    </a>
+                </li>
+                <li class="select-lists" id="emailButton">
+                    <a href="#">
+                        <div class="icon sm" >
+                            <img src="./Assests/icons/email.svg" width="20" height="20" class="icon-dark" alt="">
+                            <img src="./Assests/icons/email-d.svg" width="20" height="20" class="icon-light" alt="">
+                        </div>
+                        <div class="txt">isaactuffour744@gmail.com</div>
+                    </a>
+                </li>
+                <li class="select-lists">
+                    <a href="https://github.com/Dejunia">
+                        <div class="icon sm">
+                            <img src="./Assests/icons/github.svg" width="20" height="20" class="icon-dark" alt="">
+                            <img src="./Assests/icons/github-d.svg" width="20" height="20" class="icon-light" alt="">
+                        </div>
+                        <div class="txt">DeJunia</div>
+                    </a>
+                </li>
+                <li class="select-lists">
+                    <a href="https://www.linkedin.com/in/de-junia-291ab4307">
+                        <div class="icon sm">
+                            <img src="./Assests/icons/linkedin.svg" width="20" height="20" alt="" class="icon-dark">
+                            <img src="./Assests/icons/linkedin-d.svg" width="20" height="20" alt="" class="icon-light">
+                        </div>
+                        <div class="txt">De Junia</div>
+                    </a>
+                </li>
+                <li class="select-lists">
+                    <a href="https://www.google.com.gh/maps/place/Accra/@5.5913738,-0.2621306,12z/data=!3m1!4b1!4m6!3m5!1s0xfdf9084b2b7a773:0xbed14ed8650e2dd3!8m2!3d5.5592846!4d-0.1974306!16zL20vMGZueWM?entry=ttu">
+                        <div class="icon sm">
+                            <img src="./Assests/icons/location.svg" width="20" height="20" alt="" class="icon-dark">
+                            <img src="./Assests/icons/location-d.svg" width="20" height="20" alt="" class="icon-light">
+
+                        </div>
+                        <div class="txt">Ghana, Accra</div>
+                    </a>
+                </li>
+                <li class="select-lists">
+                    <a href="#">
+                        <div class="icon sm">
+                            <img src="./Assests/icons/ghana.svg" width="20" height="20" alt="">
+                        </div>
+                        <div class="txt">Ghanaian</div>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <div class="bottom-nav">
+            <div class="bottomNav-content">
+                <buuton class="icon lg">
+                    <img src="./Assests/icons/html.svg" width="50" height="50" alt="">
+                </buuton>
+                <buuton class="icon lg">
+                    <img src="./Assests/icons/css.svg" width="50" height="50" alt="">
+                </buuton>
+                <buuton class="icon lg">
+                    <img src="./Assests/icons/js.svg" width="50" height="50" alt="">
+                </buuton>
+                <buuton class="icon lg">
+                    <img src="./Assests/icons/react.svg" width="50" height="50" alt="">
+                </buuton>
+                <buuton class="icon lg">
+                    <img src="./Assests/icons/json.svg" width="50" height="50" alt="">
+                </buuton>
+                <buuton class="icon lg">
+                    <img src="./Assests/icons/php.svg" width="50" height="50" alt="">
+                </buuton>
+                <buuton class="icon lg">
+                    <img src="./Assests/icons/mysql.svg" width="50" height="50" alt="">
+                </buuton>
+                <buuton class="icon lg">
+                    <img src="./Assests/icons/py.svg" width="50" height="50" alt="">
+                </buuton>
+                <buuton class="icon lg">
+                    <img src="./Assests/icons/vite.svg" width="50" height="50" alt="">
+                </buuton>
+            </div>
+        </div>
+
+        <div class="nav-footer">
+            <p>Follow</p>
+            <div class="footer-icon">
+                <a href="https://wa.me/233534582327">
+                    <img src="./Assests/icons/whatsapp.svg" width="24" height="24" alt="">
+                </a>
+                <a href="https://wa.me/233534582327">
+                    <img src="./Assests/icons/tiktok.svg" width="24" height="24" alt="">
+                </a>
+                <a href="https://wa.me/233534582327">
+                    <img src="./Assests/icons/facebook.svg" width="24" height="24" alt="">
+                </a>
+                <a href="https://wa.me/233534582327">
+                    <img src="./Assests/icons/insta.svg" width="24" height="24" alt="">
+                </a>
+            </div>
+            <p>Copyright &copy; 2024</p>
+            <a href="">@DeJunia</a>
+        </div>
+    </nav>
+
+    <div class="overlay" id="overlay" overlay menu-toggler></div>
+
+    <main class="container desktop">
+        <article class="content" id="sections">
+            <section class="page home" id="page1">
+                <div class="pageContent home">
+                    <div class="myInfo">
+                        <p>Hi there <span class="wave">👋</span></p>
+                        <h1>I'm Dejunia</h1>
+                        <p class="animated-text" id="animated-text">A <span id="roleText" class="spec"></span></p>
+                        <div class="icons">
+                            <a href="https://github.com/Dejunia">
+                                <img src="./Assests/icons/github.svg" width="24" height="24" alt="" class="icon-dark">
+                                <img src="./Assests/icons/github-d.svg" width="24" height="24" alt="" class="icon-light">
+                            </a>
+                            <a href="https://www.linkedin.com/in/de-junia-291ab4307">
+                                <img src="./Assests/icons/linkedin.svg" width="24" height="24" class="icon-dark">
+                                <img src="./Assests/icons/linkedin-d.svg" width="24" height="24" class="icon-light">
+                            </a>
+                        </div>
+                        <div class="dBtn">
+                            <a href="./Assests/downloads/IsaacTuffourResume.pdf" download >
+                                Download CV
+                            </a>
+                        </div>
+                    </div>
+                    <figure class="picInfo">
+                        <img src="./Assests/img/WhatsApp Image 2024-05-25 at 21.51.59_c2ca6834.jpg" width="200px" height="200px" alt="">
+                    </figure>
+                </div>
+            </section>
+            <section class="page services" id="page2">
+                <div class="pageContent services">
+                    <div class="header">Services</div>
+                    <h2>Front-End Services</h2>
+                    <h3>1. Personal Blog Platform</h3>
+                    <p><span class="spec">Description: </span> A blogging platform where users can register, log in, create, edit, delete, and view blog posts.</p>
+                    <p><span class="spec">Tech Stack: </span> React.js (for the front end), Redux (for state management), Styled Components or SASS (for styling).</p>
+                    <div class="line">
+                        <span class="spec">Features:</span>
+                        <ul>
+                            <li>User authentication (sign up, login, logout).</li>
+                            <li>CRUD operations for blog posts.</li>
+                            <li>Responsive design.</li>
+                            <li>Comments section for each post.</li>
+                        </ul>
+                    </div>
+                    
+                    <h3>2. Weather App</h3>
+                    <p><span class="spec">Description: </span> A weather forecasting application that provides weather updates for any city.</p>
+                    <p><span class="spec">Tech Stack: </span> Vue.js or Angular (for the front end), OpenWeatherMap API (for weather data).</p>
+                    <div class="line">
+                        <span class="spec">Features:</span>
+                        <ul>
+                            <li>Search functionality to find weather by city.</li>
+                            <li>Display current weather, 7-day forecast, and weather conditions.</li>
+                            <li>Responsive design with attractive UI elements.</li>
+                            <li>Geolocation to fetch weather for the user's current location.</li>
+                        </ul>
+                    </div>
+                    
+                    <h3>3. E-commerce Product Listing</h3>
+                    <p><span class="spec">Description: </span> A product listing page that allows users to view, filter, and sort products.</p>
+                    <p><span class="spec">Tech Stack: </span> React.js or Vue.js (for the front end), Material-UI or Bootstrap (for styling).</p>
+                    <div class="line">
+                        <span class="spec">Features:</span>
+                        <ul>
+                            <li>Product grid/list view.</li>
+                            <li>Filters for categories, price range, ratings.</li>
+                            <li>Sorting by price, popularity, and newest arrivals.</li>
+                            <li>Responsive design for mobile and desktop.</li>
+                        </ul>
+                    </div>
+                    
+                    <h2>Back-End Services</h2>
+                    <h3>1. RESTful API for a Blogging Platform</h3>
+                    <p><span class="spec">Description: </span> A RESTful API to manage users, posts, and comments for a blogging platform.</p>
+                    <p><span class="spec">Tech Stack: </span> Node.js with Express.js (for the back end), MongoDB (for the database).</p>
+                    <div class="line">
+                        <span class="spec">Features:</span>
+                        <ul>
+                            <li>Endpoints for user registration, login, and profile management.</li>
+                            <li>CRUD operations for blog posts and comments.</li>
+                            <li>JWT authentication for secure endpoints.</li>
+                            <li>Basic rate limiting and input validation.</li>
+                        </ul>
+                    </div>
+                    
+                    <h3>2. Authentication and Authorization Service</h3>
+                    <p><span class="spec">Description: </span> A microservice that handles user authentication and authorization.</p>
+                    <p><span class="spec">Tech Stack: </span> Python with Flask or Node.js with Express.js, PostgreSQL (for the database).</p>
+                    <div class="line">
+                        <span class="spec">Features:</span>
+                        <ul>
+                            <li>User registration, login, password reset.</li>
+                            <li>JWT or OAuth2 implementation for token-based authentication.</li>
+                            <li>Role-based access control (RBAC) for different levels of user permissions.</li>
+                            <li>Email verification using a service like SendGrid.</li>
+                        </ul>
+                    </div>
+                    
+                    <h3>3. E-commerce API</h3>
+                    <p><span class="spec">Description: </span> A RESTful API for managing products, orders, and users for an e-commerce application.</p>
+                    <p><span class="spec">Tech Stack: </span> Node.js with Express.js or Django (for the back end), MySQL or MongoDB (for the database).</p>
+                    <div class="line">
+                        <span class="spec">Features:</span>
+                        <ul>
+                            <li>Endpoints for product management (add, update, delete, list products).</li>
+                            <li>User authentication and profile management.</li>
+                            <li>Order management (create, update, delete orders).</li>
+                            <li>Integration with a payment gateway (like Stripe or PayPal).</li>
+                        </ul>
+                    </div>
+                    
+                    <h2>Full-Stack Services</h2>
+                    <h3>1. Task Management Application</h3>
+                    <p><span class="spec">Description: </span> A full-stack application where users can manage tasks, set deadlines, and track progress.</p>
+                    <p><span class="spec">Tech Stack: </span> MERN Stack (MongoDB, Express.js, React.js, Node.js).</p>
+                    <div class="line">
+                        <span class="spec">Features:</span>
+                        <ul>
+                            <li>User authentication with JWT.</li>
+                            <li>CRUD operations for tasks.</li>
+                            <li>Task categorization and status tracking.</li>
+                            <li>Responsive and intuitive UI.</li>
+                        </ul>
+                    </div>
+                    
+                    <h3>2. Real-Time Chat Application</h3>
+                    <p><span class="spec">Description: </span> A real-time chat application with user authentication and chat rooms.</p>
+                    <p><span class="spec">Tech Stack: </span> React.js (front end), Node.js with Express.js and Socket.io (back end), MongoDB (database).</p>
+                    <div class="line">
+                        <span class="spec">Features:</span>
+                        <ul>
+                            <li>Real-time messaging with Socket.io.</li>
+                            <li>User authentication and profile management.</li>
+                            <li>Creation of public and private chat rooms.</li>
+                            <li>Typing indicators and message read receipts.</li>
+                        </ul>
+                    </div>
+                    
+                    
+                </div>
+                
+            </section>
+            <section class="page projects" id="page3">
+                <div class="pageContent projects">
+                    <div class="header">Projects</div>
+                    <div class="pageContent-container">
+                        <div class="picture-grid">
+                            <div class="picframe">
+                                <a href="#" class="cover">
+                                    <img src="./Assests/img/Tiktok.png" alt="tiktok app re-renderd">
+                                </a>
+                                
+                                <div class="frameInfo">
+                                    <a href="#" class="main"><p>Tiktok WebApp</p></a>
+                                    <a href="#" class="sub-txt">
+                                        <p>Re-rendered the Tiktok web application </p></a>
+                                </div>
+                            </div>
+                            <div class="picframe">
+                                <a href="#" class="cover">
+                                    <img src="./Assests/img/calculatorApp.png" alt="tiktok app re-renderd">
+                                </a>
+                                
+                                <div class="frameInfo">
+                                    <a href="#" class="main"><p>Calculator App</p></a>
+                                    <a href="#" class="sub-txt">
+                                        <p>A simple calculator app</p></a>
+                                </div>
+                            </div>
+                            <div class="picframe">
+                                <a href="#" class="cover">
+                                    <img src="./Assests/img/countdown.png" alt="tiktok app re-renderd">
+                                </a>
+                                
+                                <div class="frameInfo">
+                                    <a href="#" class="main"><p>A CountDown App</p></a>
+                                    <a href="#" class="sub-txt">
+                                        <p>Count-down app made using Javascript</p></a>
+                                </div>
+                            </div>
+                            <div class="picframe">
+                                <a href="#" class="cover">
+                                    <img src="./Assests/img/wetherapp.png" alt="tiktok app re-renderd">
+                                </a>
+                                
+                                <div class="frameInfo">
+                                    <a href="#" class="main"><p>Weather App</p></a>
+                                    <a href="#" class="sub-txt">
+                                        <p>API weather app made using React.js and restAPI</p></a>
+                                </div>
+                            </div>
+
+                            <div class="picframe">
+                                <a href="#" class="cover">
+                                    <img src="./Assests/img/dice app.png" alt="tiktok app re-renderd">
+                                </a>
+                                
+                                <div class="frameInfo">
+                                    <a href="#" class="main"><p>Dice Roller</p></a>
+                                    <a href="#" class="sub-txt">
+                                        <p>Dice roller. A single player game using only Javascript</p></a>
+                                </div>
+                            </div>
+
+                            <div class="picframe">
+                                <a href="#" class="cover">
+                                    <img src="./Assests/img/time app.png" alt="tiktok app re-renderd">
+                                </a>
+                                
+                                <div class="frameInfo">
+                                    <a href="#" class="main"><p>Date App</p></a>
+                                    <a href="#" class="sub-txt">
+                                        <p>A simple date app using only Js</p></a>
+                                </div>
+                            </div>
+
+                            <div class="picframe">
+                                <a href="#" class="cover">
+                                    <img src="./Assests/img/rps app.png" alt="tiktok app re-renderd">
+                                </a>
+                                
+                                <div class="frameInfo">
+                                    <a href="#" class="main"><p>Rock-Paper-Scissors</p></a>
+                                    <a href="#" class="sub-txt">
+                                        <p>Rock paper scissors App</p></a>
+                                </div>
+                            </div>
+
+                            <div class="picframe">
+                                <a href="#" class="cover">
+                                    <img src="./Assests/img/slider.png" alt="tiktok app re-renderd">
+                                </a>
+                                
+                                <div class="frameInfo">
+                                    <a href="#" class="main"><p>Simple Slider</p></a>
+                                    <a href="#" class="sub-txt">
+                                        <p>Slider using React</p></a>
+                                </div>
+                            </div>
+
+                            <div class="picframe">
+                                <a href="#" class="cover">
+                                    <img src="./Assests/img/temperature.png" alt="tiktok app re-renderd">
+                                </a>
+                                
+                                <div class="frameInfo">
+                                    <a href="#" class="main"><p>Temperature Convertor</p></a>
+                                    <a href="#" class="sub-txt">
+                                        <p>Converts degrees to  Fahrenheit &  Fahrenheit to degree celcius</p></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                   
+                </div>
+            </section>
+            <section class="page about" id="page4">
+                <div class="pageContent about">
+                    <div class="header">About</div>
+                    <div class="uContent">
+                        <div class="l-side">
+                          <div class="contactMe">
+                            <div class="sect col">
+                                <img src="./Assests/img/logo3.jpg" height="90" width="90" alt=""> 
+                                <h2>De Junia</h2>
+                            </div>
+                            <div class="sect row">
+                                <h2>About Me</h2>
+                                <p>Hello! I'm De Junia, a versatile and passionate web developer specializing in both front-end and back-end development. With a strong foundation in web technologies and a keen eye for design, I bring a holistic approach to building dynamic, user-friendly, and robust web applications. My goal is to bridge the gap between beautiful design and seamless functionality, ensuring an optimal user experience across all devices.</p>
+                                <p>
+                                    I'm always excited to take on new projects and collaborate with clients and fellow developers. Whether you're looking to build a new web application from scratch, need help with a specific aspect of your project, or want to improve an existing solution, I'm here to help.
+                                </p>
+        
+                                <div class="contact">
+                                    <p>Contact Me 👇</p>
+                                    <p class="spec">isaactuffour744@gmail.com</p>
+                                </div>
+                            </div>
+                        </div>
+                        </div>
+                        <div class="r-side">
+                            <div class="f-div">
+                                <h3 class="progress-title">
+                                    Front-end Development (UI/UX)
+                                </h3>
+        
+                                <div class="progress-container">
+                                    <div class="progress-circle" id="progress1">
+                                        <svg width="120" height="120" viewBox="0 0 120 120">
+                                            <defs>
+                                                <linearGradient id="gradient" x1="0%" y1="0%" x2="100%" y2="100%">
+                                                    <stop offset="0%" style="stop-color:#6a11cb;" />
+                                                    <stop offset="100%" style="stop-color:#2575fc;" />
+                                                </linearGradient>
+                                            </defs>
+                                            <circle class="circle-bg" cx="60" cy="60" r="54"></circle>
+                                            <circle class="circle-progress" cx="60" cy="60" r="54"></circle>
+                                        </svg>
+                                        <span class="progress-text">0%</span>
+                                    </div>
+                                </div>
+        
+                                <div class="progress2-container" >
+                                    <div class="progressIcon">
+                                        <img src="./Assests/icons/html.svg" width="20" height="20" alt="">
+                                    </div>
+                                    <div class="progress-b" >
+                                        <div class="progress2-bar" id="prg-1">
+                                            <span class="progres2-text">html</span>
+                                        </div>
+                                    </div>
+                                    <div class="progress-b-text" >95%</div>
+                                </div> 
+        
+                                <div class="progress2-container">
+                                    <div class="progressIcon">
+                                        <img src="./Assests/icons/css.svg" width="20" height="20" alt="">
+                                    </div>
+                                    <div class="progress-b" >
+                                        <div class="progress2-bar" id="prg-2">
+                                            <span class="progres2-text">Css</span>
+                                        </div>
+                                    </div>
+                                    <div class="progress-b-text">92%</div>
+                                </div> 
+        
+                                <div class="progress2-container">
+                                    <div class="progressIcon">
+                                        <img src="./Assests/icons/react.svg" width="20" height="20" alt="">
+                                    </div>
+                                    <div class="progress-b" >
+                                        <div class="progress2-bar" id="prg-3">
+                                            <span class="progres2-text">React.js</span>
+                                        </div>
+                                    </div>
+                                    <div class="progress-b-text">86%</div>
+                                </div>
+        
+                                <div class="progress2-container">
+                                    <div class="progressIcon">
+                                        <img src="./Assests/icons/tailwind.svg" width="20" height="20" alt="">
+                                    </div>
+                                    <div class="progress-b" >
+                                        <div class="progress2-bar" id="prg-4">
+                                            <span class="progres2-text">Tailwind</span>
+                                        </div>
+                                    </div>
+                                    <div class="progress-b-text">59%</div>
+                                </div> 
+                                <div class="progress2-container">
+                                    <div class="progressIcon">
+                                        <img src="./Assests/icons/js.svg" width="20" height="20" alt="">
+                                    </div>
+                                    <div class="progress-b" >
+                                        <div class="progress2-bar" id="prg-5">
+                                            <span class="progres2-text">Js</span>
+                                        </div>
+                                    </div>
+                                    <div class="progress-b-text">80%</div>
+                                </div> 
+        
+                                <div class="progress2-container">
+                                  <div class="progressIcon">
+                                      <img src="./Assests/icons/vite.svg" width="20" height="20" alt="">
+                                  </div>
+                                  <div class="progress-b" >
+                                      <div class="progress2-bar" id="prg-11">
+                                          <span class="progres2-text">Js</span>
+                                      </div>
+                                  </div>
+                                  <div class="progress-b-text">90%</div>
+                              </div> 
+        
+                                <h3 class="progress-title">
+                                    Backend Development
+                                </h3>
+        
+                                <div class="progress-container">
+                                    <div class="progress-circle" id="progress2">
+                                        <svg width="120" height="120" viewBox="0 0 120 120">
+                                            <defs>
+                                                <linearGradient id="gradient" x1="0%" y1="0%" x2="100%" y2="100%">
+                                                    <stop offset="0%" style="stop-color:#6a11cb;" />
+                                                    <stop offset="100%" style="stop-color:#2575fc;" />
+                                                </linearGradient>
+                                            </defs>
+                                            <circle class="circle-bg" cx="60" cy="60" r="54"></circle>
+                                            <circle class="circle-progress" cx="60" cy="60" r="54"></circle>
+                                        </svg>
+                                        <span class="progress-text">0%</span>
+                                    </div>
+                                </div>
+        
+                                <div class="progress2-container" >
+                                    <div class="progressIcon">
+                                        <img src="./Assests/icons/js.svg" width="20" height="20" alt="">
+                                    </div>
+                                    <div class="progress-b" >
+                                        <div class="progress2-bar" id="prg-6">
+                                            <span class="progres2-text">Js</span>
+                                        </div>
+                                    </div>
+                                    <div class="progress-b-text" >80%</div>
+                                </div> 
+        
+                                <div class="progress2-container">
+                                    <div class="progressIcon">
+                                        <img src="./Assests/icons/py.svg" width="20" height="20" alt="">
+                                    </div>
+                                    <div class="progress-b" >
+                                        <div class="progress2-bar" id="prg-7">
+                                            <span class="progres2-text">Py</span>
+                                        </div>
+                                    </div>
+                                    <div class="progress-b-text">90%</div>
+                                </div> 
+        
+                                <div class="progress2-container">
+                                    <div class="progressIcon">
+                                        <img src="./Assests/icons/php.svg" width="20" height="20" alt="">
+                                    </div>
+                                    <div class="progress-b" >
+                                        <div class="progress2-bar" id="prg-8">
+                                            <span class="progres2-text">php</span>
+                                        </div>
+                                    </div>
+                                    <div class="progress-b-text">69%</div>
+                                </div>
+        
+                                <div class="progress2-container">
+                                    <div class="progressIcon">
+                                        <img src="./Assests/icons/json.svg" width="20" height="20" alt="">
+                                    </div>
+                                    <div class="progress-b" >
+                                        <div class="progress2-bar" id="prg-9">
+                                            <span class="progres2-text">json</span>
+                                        </div>
+                                    </div>
+                                    <div class="progress-b-text">100%</div>
+                                </div>
+        
+                                <div class="progress2-container">
+                                    <div class="progressIcon">
+                                        <img src="./Assests/icons/mysql.svg" width="20" height="20" alt="">
+                                    </div>
+                                    <div class="progress-b" >
+                                        <div class="progress2-bar" id="prg-10">
+                                            <span class="progres2-text">sql</span>
+                                        </div>
+                                    </div>
+                                    <div class="progress-b-text">35%</div>
+                                </div>
+        
+                                <div class="progress2-container">
+                                  <div class="progressIcon">
+                                      <img src="./Assests/icons/node.svg" width="20" height="20" alt="">
+                                  </div>
+                                  <div class="progress-b" >
+                                      <div class="progress2-bar" id="prg-12">
+                                          <span class="progres2-text">Node</span>
+                                      </div>
+                                  </div>
+                                  <div class="progress-b-text">70%</div>
+                              </div>
+        
+                              <div class="progress2-container">
+                                <div class="progressIcon">
+                                    <img src="./Assests/icons/github.svg" width="20" height="20" alt="">
+                                </div>
+                                <div class="progress-b" >
+                                    <div class="progress2-bar" id="prg-13">
+                                        <span class="progres2-text">Github</span>
+                                    </div>
+                                </div>
+                                <div class="progress-b-text">85%</div>
+                            </div>
+        
+                            <div class="progress2-container">
+                              <div class="progressIcon">
+                                  <img src="./Assests/icons/git.svg" width="20" height="20" alt="">
+                              </div>
+                              <div class="progress-b" >
+                                  <div class="progress2-bar" id="prg-14">
+                                      <span class="progres2-text">Git</span>
+                                  </div>
+                              </div>
+                              <div class="progress-b-text">60%</div>
+                          </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+            </section>
+        </article>
+
+        <div class="navigation-container">
+            <div class="navgation-dots">
+                <div class="dot active" onclick="scrollPage(1)"></div>
+                <div class="dot" onclick="scrollPage(2)"></div>
+                <div class="dot" onclick="scrollPage(3)"></div>
+                <div class="dot" onclick="scrollPage(4)"></div>
+            </div>
+        </div>
+            
+      
+    </main>
+
+    <main class="mobileContainer">
+      <article class="mobPage home">
+        <figure class="picInfo">
+            <img src="./Assests/img/WhatsApp Image 2024-05-25 at 21.51.59_c2ca6834.jpg" width="200px" height="200px" alt="">
+        </figure>
+        <div class="mobInfo">
+            <p>Hi there <span class="wave">👋</span></p>
+            <h1>I'm De Junia</h1>
+            <p class="animated-text" id="animated-text">A <span id="roleText2" class="spec"></span></p>
+
+            <div class="icons">
+                <a href="https://github.com/Dejunia">
+                    <img src="./Assests/icons/github.svg" width="24" height="24" alt="" class="icon-dark">
+                    <img src="./Assests/icons/github-d.svg" width="24" height="24" alt="" class="icon-light">
+                </a>
+                <a href="https://www.linkedin.com/in/de-junia-291ab4307">
+                    <img src="./Assests/icons/linkedin.svg" width="24" height="24" class="icon-dark">
+                    <img src="./Assests/icons/linkedin-d.svg" width="24" height="24" class="icon-light">
+
+                </a>
+               
+            </div>
+            <div class="dBtn">
+            <a href="./Assests/downloads/IsaacTuffourResume.pdf" download >
+                Download CV
+            </a>
+            </div>
+        </div>
+      </article>
+    </main>
+
+    <footer>
+        <div class="footerCont">
+            <div class="footerBtns">
+                <ul>
+                    <li><a href="index.html" class="active">
+                       <img src="./Assests/icons/home.svg" width="20" height="20" alt="" class="icon-dark">
+                       <img src="./Assests/icons/home-d.svg" width="20" height="20" alt="" class="icon-light">
+                       <div class="txt">Home</div>
+                    </a></li>
+                    <li><a href="services.html">
+                        <img src="./Assests/icons/settings.svg" width="20" height="20" alt="" class="icon-dark">
+                        <img src="./Assests/icons/settings-d.svg" width="20" height="20" alt="" class="icon-light">
+
+                        <div class="txt">Services</div>
+                    </a></li>
+                    <li><a href="projects.html">
+                        <img src="./Assests/icons/services.svg" width="20" height="20" alt="" class="icon-dark">
+                        <img src="./Assests/icons/services-d.svg" width="20" height="20" alt="" class="icon-light">
+                        <div class="txt">Projects</div>
+                    </a></li>
+                    <li><a href="about.html" >
+                        <img src="./Assests/icons/profile.svg" width="20" height="20" alt="" class="icon-dark">
+                        <img src="./Assests/icons/profile-d.svg" width="20" height="20" alt="" class="icon-light">
+                        <div class="txt">About</div>
+                    </a></li>
+                </ul>
+                
+            </div>
+        </div>
+    </footer>
+    <script src="./Assests/js/mode.js"></script>
+    <script src="./Assests/js/index.js"></script>
+    <script src="./Assests/js/sidebar.js"></script>
+</body>
+</html>

@@ -1,0 +1,100 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+}
+
+nav {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: #333;
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+    z-index: 10;
+    transition: background-color 0.3s ease;
+}
+
+nav.active {
+    background-color: #444;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+.dots {
+    position: fixed;
+    top: 50%;
+    right: 20px;
+    transform: translateY(-50%);
+    z-index: 10;
+}
+
+.dot {
+    width: 20px;
+    height: 20px;
+    margin: 10px 0;
+    background-color: #bbb;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.dot.active {
+    background-color: #333;
+    transform: scale(1.2);
+}
+
+.content-container {
+    margin-top: 60px; /* Adjust for fixed navbar */
+}
+
+.section {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: background-color 0.5s ease;
+}
+
+#section1 {
+    background-color: lightblue;
+}
+
+#section2 {
+    background-color: lightgreen;
+}
+
+#section3 {
+    background-color: lightcoral;
+}
+
+.btn {
+    padding: 20px;
+    font-size: 20px;
+    border: none;
+    cursor: pointer;
+    transition: transform 0.3s ease, background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.btn.active {
+    transform: scale(1.2);
+    background-color: yellow;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+}
